@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>My Two-Column Website</title>
+	<style>
+		.column {
+			float: left;
+			width: 50%;
+			padding: 10px;
+			box-sizing: border-box;
+		}
+
+		.row::after {
+			content: "";
+			clear: both;
+			display: table;
+		}
+	</style>
+</head>
+<body>
+
+	<div class="row">
+		<div class="column">
+			<h2>Column 1</h2>
+			<p>This is the content for column 1.</p>
+		</div>
+		<div class="column">
+			<h2>Column 2</h2>
+			<p>This is the content for column 2.</p>
+		</div>
+	</div>
+
+</body>
+</html>
